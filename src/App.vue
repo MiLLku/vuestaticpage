@@ -17,7 +17,7 @@ const wishes: string[] = [
 // 복주머니를 클릭했을 때 실행될 함수
 function revealWish() {
   const randomIndex = Math.floor(Math.random() * wishes.length);
-  wishMessage.value = wishes[randomIndex];
+  wishMessage.value = wishes[randomIndex]!;
   messageVisible.value = true;
 }
 </script>
